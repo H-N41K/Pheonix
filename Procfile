@@ -1,1 +1,1 @@
-web: gunicorn pheonix.wsgi 
+web: gunicorn pheonix.wsgi --log-file -
