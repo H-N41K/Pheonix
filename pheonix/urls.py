@@ -43,9 +43,6 @@ urlpatterns = [
     url(r'^', include('django.contrib.auth.urls')),
     url(r'^', include('accounts.urls', namespace='profiles')),
 ]
-urlpatterns += patterns('',
- (r'^static/(?P.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
- )
 
 if settings.DEBUG:
     urlpatterns += (static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
