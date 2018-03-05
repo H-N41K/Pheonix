@@ -18,7 +18,7 @@ $(document).ready(function(){
                 {% if  object.is_superuser %}
                 <img class="img img-raised" src="{% static 'assets/img/' %}{{ object.username }}.png">
                 {% else %}
-                    <img class="img img-raised" width="255px" height="255px" style="opacity: 0.7;"src="{% static 'assets/img/' %}{{ object.username|slice:":1" }}.png">
+                    <img class="img img-raised" width="255px" height="255px" style="opacity: 0.7;"src="{% static 'assets/img/' %}{{ object.user|slice:":1" }}.png">
                 {% endif %}    
                 </div>
 
