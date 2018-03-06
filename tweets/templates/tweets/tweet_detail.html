@@ -16,7 +16,7 @@ $(document).ready(function(){
     <div class="card card-profile" data-background-color="yellow">
                 <div class="card-avatar">
                 {% if  object.user.is_superuser %}
-                <img class="img img-raised" src="{% static 'assets/img/' %}{{ object.username }}.png">
+                <img class="img img-raised" src="{% static 'assets/img/' %}{{ object.user }}.png">
                 {% else %}
                     <img class="img img-raised" width="255px" height="255px" style="opacity: 0.7;"src="{% static 'assets/img/' %}{{ object.user.username|slice:":1"|lower }}.png">
                 {% endif %}    
