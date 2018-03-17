@@ -36,7 +36,12 @@ $(document).ready(function(){
                   {% if "H3M3N" in request.user.username  %}
                   <h6 class="card-category">CEO &amp; CO-Founder</h6>
                   {% endif %}
-                  
+                  {% if "SHUBHAM" in object.user.username  %}
+                  <h6 class="card-category">CO-Founder</h6>
+                  {% endif %}
+                  {% if "INDRA" in object.user.username  %}
+                  <h6 class="card-category">CO-Founder</h6>
+                  {% endif %}
                   <h4 class="card-title text-capitalize">{{ request.user }}&nbsp;
 
         {% if request.user.is_staff %}
