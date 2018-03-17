@@ -42,9 +42,9 @@ class ParentTweetModelSerializer(serializers.ModelSerializer):
 
     def get_dp(self,obj):
         username = obj.user.username
-        if "H3M3N" in username :
-                dp_file = username + '.png'
-                return dp_file
+        # if "H3M3N" in username :
+        #         dp_file = username + '.png'
+        #         return dp_file
         if "shubham" in username :
                 dp_file = username + '.png'
                 return dp_file
