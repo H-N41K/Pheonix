@@ -52,6 +52,7 @@ class ParentTweetModelSerializer(serializers.ModelSerializer):
                 dp_file = username + '.png'
                 return dp_file        
         username = username[0]
+        username = username.lower()
         dp_file = username + '.png'
         return dp_file    
 
@@ -107,6 +108,7 @@ class TweetModelSerializer(serializers.ModelSerializer):
                 dp_file = username + '.png'
                 return dp_file     
         username = username[0]
+        username = username.lower()
         dp_file = username + '.png'
         return dp_file
 
