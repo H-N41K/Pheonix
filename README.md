@@ -25,8 +25,8 @@
 <a href="https://pheonix2018.herokuapp.com/" target="blank">https://pheonix2018.herokuapp.com/</a>
 
 Use the following credentials to login:
-Username: demo
-Password: demo1234
+<br> Username: demo 
+<br> Password: demo1234
 
 ------------------------------------------
 ### Installation Steps
